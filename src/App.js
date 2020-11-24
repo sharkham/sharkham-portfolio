@@ -1,4 +1,5 @@
 import './App.css';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
         <h1>
           Sam Markham
         </h1>
-
+        <NavBar/>
       </header>
     </div>
   );
