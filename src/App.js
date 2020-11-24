@@ -19,6 +19,7 @@ function App() {
         <h1>
           Sam Markham
         </h1>
+      </header>
         <NavBar/>
         <Switch>
           <Route exact path="/"><Home/></Route>
@@ -28,7 +29,6 @@ function App() {
           <Route path="/about"><About/></Route>
           <Route path="/contact"><Contact/></Route>
         </Switch>
-      </header>
     </div>
   );
 }
