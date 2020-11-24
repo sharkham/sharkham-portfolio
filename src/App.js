@@ -20,15 +20,15 @@ function App() {
           Sam Markham
         </h1>
       </header>
-        <NavBar/>
-        <Switch>
-          <Route exact path="/"><Home/></Route>
-          <Route path="/projects"><Projects/></Route>
-          <Route path="/blog"><Blog/></Route>
-          <Route path="/resume"><Resume/></Route>
-          <Route path="/about"><About/></Route>
-          <Route path="/contact"><Contact/></Route>
-        </Switch>
+      <NavBar/>
+      <Switch>
+        <Route exact path="/"><Home/></Route>
+        <Route path="/projects"><Projects/></Route>
+        <Route path="/blog"><Blog/></Route>
+        <Route path="/resume"><Resume/></Route>
+        <Route path="/about"><About/></Route>
+        <Route path="/contact"><Contact/></Route>
+      </Switch>
     </div>
   );
 }
