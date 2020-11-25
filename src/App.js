@@ -15,6 +15,7 @@ import Contact from './components/Contact';
 function App() {
   return (
     <div className="App">
+      {/* <div id="triangle-topleft"></div> */}
       <header className="App-header">
         <h1>
           Sam Markham
