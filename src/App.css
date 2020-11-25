@@ -49,3 +49,9 @@ body {
   border-top: 100px solid #eb0056;
   border-right: 100px solid transparent;
 }
+
+.project-card {
+  border-style: solid;
+  border: 5px;
+  border-color: black;
+}
