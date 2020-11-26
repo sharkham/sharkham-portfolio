@@ -1,4 +1,4 @@
-export default projects = [
+export const projects = [
   {
     name: "Novel Tracker App",
     description: "A novel tracking app",
