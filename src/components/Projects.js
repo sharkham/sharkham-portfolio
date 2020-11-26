@@ -1,9 +1,10 @@
-import '../App.css';
 import React from 'react';
+import NovelTracker from './NovelTracker';
 
 const Projects = () => {
   return (
     <div>
+      <NovelTracker/>
       <div className="project-card">
         <h2>Novel Tracker App</h2>
         <p>A novel tracking app</p>
