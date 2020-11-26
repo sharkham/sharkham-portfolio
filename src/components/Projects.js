@@ -7,13 +7,8 @@ const Projects = () => {
   return (
     <div>
       {projects.map(project => {
-        return <Project/>
+        return <Project data={project}/>
       })}
-      <div className="project-card">
-        <h2>PokéTeamBuilder</h2>
-        <p>A Pokémon size comparison app</p>
-        <p className="project-languages">VanillaJS, Rails (API)</p>
-      </div>
     </div>
   );
 }

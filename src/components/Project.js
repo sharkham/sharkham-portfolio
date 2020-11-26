@@ -1,9 +1,13 @@
 import React from 'react';
 
-const Project = () => {
+const Project = (props) => {
+
+  let { name, description, languages, github } = props.data;
   return (
-    <div>
-      Test
+    <div className="project-card">
+      <h2>{name}</h2>
+      <p>{description}</p>
+      <p className="project-languages">{languages}</p>
     </div>
   );
 }
