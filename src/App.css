@@ -24,6 +24,10 @@
   /* color: #fff; */
 }
 
+/* h1 {
+  display: inline-block;
+} */
+
 .nav-link {
   padding: 10px 10px 10px 0px;
   text-decoration: none;
@@ -78,5 +82,7 @@ body {
 }
 
 .social-icons {
-  width: 100px;
+  width: 30px;
+  padding: 0px 5px 0px 5px;
+  display: inline-block;
 }

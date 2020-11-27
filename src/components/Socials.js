@@ -7,13 +7,13 @@ import twitter from '../images/twitter-icon.png'
 
 const Socials = () => {
   return (
-    <div>
+    <>
       <img src={dev} alt="DEV icon" className="social-icons" />
       <img src={email} alt="Email icon" className="social-icons" />
       <img src={github} alt="LinkedIn icon" className="social-icons" />
       <img src={linkedin} alt="GitHub icon" className="social-icons" />
       <img src={twitter} alt="Twitter icon" className="social-icons" />
-    </div>
+    </>
   );
 }
 

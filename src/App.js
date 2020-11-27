@@ -18,10 +18,10 @@ function App() {
     <div className="App">
       {/* <div id="triangle-topleft"></div> */}
       <header className="App-header">
+        <Socials/>
         <h1>
           Sam Markham
         </h1>
-        <Socials/>
       </header>
       <NavBar/>
       <Switch>
