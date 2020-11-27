@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import BlogPost from './BlogPost'
 
 const Blog = () => {
 
@@ -9,7 +10,9 @@ const Blog = () => {
     const res = await fetch("https://dev.to/api/articles?username=sharkham");
     res
       .json()
-      .then(res => setBlogPosts(res))
+      .then(res => {
+        setBlogPosts(res)
+      })
       .catch(err => setErrors(err));
   }
 
@@ -17,9 +20,18 @@ const Blog = () => {
     fetchData();
   });
 
+  const displayPosts = () => {
+    blogPosts.map(post => {
+      return(
+        <BlogPost data={post}/>
+      )
+    })
+  }
+
   return (
     <div>
       <span>{JSON.stringify(blogPosts)}</span>
+      <p>{displayPosts()}</p>
       <hr />
       <span>Has error: {JSON.stringify(hasError)}</span>
     </div>
