@@ -33,7 +33,9 @@ const Blog = () => {
 
   return (
     <div>
-      {blogPosts && displayPosts()}
+      <ul>
+        {blogPosts && displayPosts()}
+      </ul>
       {/* <hr />
       <span>Has error: {JSON.stringify(hasError)}</span> */}
     </div>

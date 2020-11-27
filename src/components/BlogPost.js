@@ -2,9 +2,9 @@ import React from 'react';
 
 const BlogPost = (props) => {
   return (
-    <div>
-      <p>{props.data.title}</p>
-    </div>
+    <li>
+      <a href={props.data.canonical_url} target="_blank">{props.data.title}</a>
+    </li>
   );
 }
 
