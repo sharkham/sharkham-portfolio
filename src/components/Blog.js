@@ -4,7 +4,7 @@ import BlogPost from './BlogPost'
 const Blog = () => {
 
   const [hasError, setErrors] = useState(false);
-  const [blogPosts, setBlogPosts] = useState({});
+  const [blogPosts, setBlogPosts] = useState(null);
 
   async function fetchData() {
     const res = await fetch("https://dev.to/api/articles?username=sharkham");
@@ -18,22 +18,24 @@ const Blog = () => {
 
   useEffect(() => {
     fetchData();
-  });
+  }, []);
 
   const displayPosts = () => {
-    blogPosts.map(post => {
+    // if (!!blogPosts) {
+      return blogPosts.map(post => {
       return(
-        <BlogPost data={post}/>
+        <BlogPost data={post} key={post.id}/>
       )
-    })
+      })
+    // }
+    // console.log(blogPosts);
   }
 
   return (
     <div>
-      <span>{JSON.stringify(blogPosts)}</span>
-      <p>{displayPosts()}</p>
-      <hr />
-      <span>Has error: {JSON.stringify(hasError)}</span>
+      {blogPosts && displayPosts()}
+      {/* <hr />
+      <span>Has error: {JSON.stringify(hasError)}</span> */}
     </div>
   );
 }
