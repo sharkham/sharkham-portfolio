@@ -33,6 +33,7 @@ const Blog = () => {
 
   return (
     <div>
+      <p>I blog about coding sometimes! Check out my most recent posts here, or find more of them on my <a href="https://dev.to/sharkham" target="_blank">DEV profile</a>.</p>
       <ul>
         {blogPosts && displayPosts()}
       </ul>
