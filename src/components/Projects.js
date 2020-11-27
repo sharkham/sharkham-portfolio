@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <div className="grid-container">
       {projects.map(project => {
-        return <Project data={project}/>
+        return <Project data={project} key={project.github}/>
       })}
     </div>
   );
