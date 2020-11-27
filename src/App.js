@@ -10,6 +10,7 @@ import Blog from './components/Blog';
 import Resume from './components/Resume';
 import About from './components/About';
 import Contact from './components/Contact';
+import Socials from './components/Socials';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <h1>
           Sam Markham
         </h1>
+        <Socials/>
       </header>
       <NavBar/>
       <Switch>
