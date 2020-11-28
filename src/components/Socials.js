@@ -8,11 +8,11 @@ import twitter from '../images/twitter-icon.png'
 const Socials = () => {
   return (
     <div className="social-icons-div">
-      <a href="https://dev.to/sharkham" target="_blank">
-        <img src={dev} alt="DEV icon" className="social-icons" />
-      </a>
       <a href="mailto:sam.e.markham@gmail.com" target="_blank">
         <img src={email} alt="Email icon" className="social-icons" />
+      </a>
+      <a href="https://dev.to/sharkham" target="_blank">
+        <img src={dev} alt="DEV icon" className="social-icons" />
       </a>
       <a href="https://github.com/sharkham" target="_blank">
         <img src={github} alt="GitHub icon" className="social-icons" />
