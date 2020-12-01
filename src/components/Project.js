@@ -21,9 +21,9 @@ const Project = (props) => {
     <div className="project-card">
       <h2>{name}</h2>
       <p>{description}</p>
-      <p className="project-languages">{languages}</p>
       <img src={process.env.PUBLIC_URL + image} alt='Screenshot of app'/>
       <br/>
+      <p className="project-languages">{languages}</p>
       <button onClick={(e) => toggleMoreInfo(e)}>More Info</button>
       {(moreInfoVisibility) && moreInfo()}
     </div>
