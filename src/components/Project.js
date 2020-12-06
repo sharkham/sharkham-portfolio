@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const Project = (props) => {
 
-  const { name, description, languages, github, moreinfo, image, livedemo, demovideo } = props.data;
+  const { name, description, languages, github, moreinfo, image, livedemo, demovideo, relatedblogposts } = props.data;
 
   const [moreInfoVisibility, setMoreInfoVisibility] = useState(false);
 
@@ -20,10 +20,22 @@ const Project = (props) => {
     } else if (!livedemo && demovideo) {
       demos = <p><a href={demovideo} target="_blank">Demo Video</a></p>
     }
+    let blogPosts
+    if (relatedblogposts) {
+      blogPosts = <div>
+        <p>Related Blog Posts:</p>
+        <ul>
+          {relatedblogposts.map(post => {
+            return <li><a href={post.url} target="_blank">{post.title}</a></li>
+          })}
+        </ul>
+      </div>
+    }
     return (
       <div>
         <p>{moreinfo}</p>
         {demos}
+        {blogPosts}
       </div>
     )
   }
