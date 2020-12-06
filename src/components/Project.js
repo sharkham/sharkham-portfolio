@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const Project = (props) => {
 
-  const { name, description, languages, github, moreinfo, image } = props.data;
+  const { name, description, languages, github, moreinfo, image, livedemo, demovideo } = props.data;
 
   const [moreInfoVisibility, setMoreInfoVisibility] = useState(false);
 
@@ -12,8 +12,19 @@ const Project = (props) => {
   }
 
   const moreInfo = () => {
+    let demos
+    if (livedemo && demovideo) {
+      demos = <p><a href={livedemo} target="_blank">Live Demo</a> | <a href={demovideo} target="_blank">Demo Video</a></p>
+    } else if (livedemo && !demovideo) {
+      demos = <p><a href={livedemo} target="_blank">Live Demo</a></p>
+    } else if (!livedemo && demovideo) {
+      demos = <p><a href={demovideo} target="_blank">Demo Video</a></p>
+    }
     return (
-      <p>{moreinfo}</p>
+      <div>
+        <p>{moreinfo}</p>
+        {demos}
+      </div>
     )
   }
 
