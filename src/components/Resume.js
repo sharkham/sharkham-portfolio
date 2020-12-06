@@ -3,9 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Resume = () => {
   return (
-    <div>
-      <p>Download my resume <Link to="/Sam-Markham-resume.pdf" target="_blank" download>here</Link>!</p>
-    </div>
+    <Link to="/Sam-Markham-resume.pdf" target="_blank" download className="resume">Resume</Link>
   );
 }
 

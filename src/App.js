@@ -19,6 +19,7 @@ function App() {
       {/* <div id="triangle-topleft"></div> */}
       <header className="App-header">
         <Socials/>
+        <Resume/>
         <h1>
           Sam Markham
         </h1>
@@ -28,7 +29,6 @@ function App() {
         <Route exact path="/"><Home/></Route>
         <Route path="/projects"><Projects/></Route>
         <Route path="/blog"><Blog/></Route>
-        <Route path="/resume"><Resume/></Route>
         <Route path="/about"><About/></Route>
         <Route path="/contact"><Contact/></Route>
       </Switch>
