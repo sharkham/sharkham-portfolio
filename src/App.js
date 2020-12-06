@@ -26,11 +26,11 @@ function App() {
       </header>
       <NavBar/>
       <Switch>
-        <Route exact path="/"><Home/></Route>
         <Route path="/projects"><Projects/></Route>
         <Route path="/blog"><Blog/></Route>
         <Route path="/about"><About/></Route>
         <Route path="/contact"><Contact/></Route>
+        <Route path="/"><Home/></Route>
       </Switch>
     </div>
   );
