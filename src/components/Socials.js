@@ -8,19 +8,19 @@ import twitter from '../images/twitter-icon.png'
 const Socials = () => {
   return (
     <div className="social-icons-div">
-      <a href="mailto:sam.e.markham@gmail.com" target="_blank">
+      <a href="mailto:sam.e.markham@gmail.com" target="_blank" rel="noreferrer">
         <img src={email} alt="Email icon" className="social-icons" />
       </a>
-      <a href="https://dev.to/sharkham" target="_blank">
+      <a href="https://dev.to/sharkham" target="_blank" rel="noreferrer">
         <img src={dev} alt="DEV icon" className="social-icons" />
       </a>
-      <a href="https://github.com/sharkham" target="_blank">
+      <a href="https://github.com/sharkham" target="_blank" rel="noreferrer">
         <img src={github} alt="GitHub icon" className="social-icons" />
       </a>
-      <a href="https://www.linkedin.com/in/markhamsam/" target="_blank">
+      <a href="https://www.linkedin.com/in/markhamsam/" target="_blank" rel="noreferrer">
         <img src={linkedin} alt="LinkedIn icon" className="social-icons" />
       </a>
-      <a href="https://twitter.com/sharkhamcodes" target="_blank">
+      <a href="https://twitter.com/sharkhamcodes" target="_blank" rel="noreferrer">
         <img src={twitter} alt="Twitter icon" className="social-icons" />
       </a>
     </div>

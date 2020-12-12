@@ -14,11 +14,11 @@ const Project = (props) => {
   const moreInfo = () => {
     let demos
     if (livedemo && demovideo) {
-      demos = <p><a href={livedemo} target="_blank">Live Demo</a> | <a href={demovideo} target="_blank">Demo Video</a></p>
+      demos = <p><a href={livedemo} target="_blank" rel="noreferrer">Live Demo</a> | <a href={demovideo} target="_blank" rel="noreferrer">Demo Video</a></p>
     } else if (livedemo && !demovideo) {
-      demos = <p><a href={livedemo} target="_blank">Live Demo</a></p>
+      demos = <p><a href={livedemo} target="_blank" rel="noreferrer">Live Demo</a></p>
     } else if (!livedemo && demovideo) {
-      demos = <p><a href={demovideo} target="_blank">Demo Video</a></p>
+      demos = <p><a href={demovideo} target="_blank" rel="noreferrer">Demo Video</a></p>
     }
     let blogPosts
     if (relatedblogposts) {
@@ -26,7 +26,7 @@ const Project = (props) => {
         <p>Related Blog Posts:</p>
         <ul>
           {relatedblogposts.map(post => {
-            return <li><a href={post.url} target="_blank">{post.title}</a></li>
+            return <li><a href={post.url} target="_blank" rel="noreferrer">{post.title}</a></li>
           })}
         </ul>
       </div>
