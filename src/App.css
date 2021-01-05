@@ -128,3 +128,12 @@ body {
   color: #000;
   background-color: #00cbeb;
 }
+
+#avatar {
+  float: right;
+  width: 200px;
+  border-radius: 50%;
+  /* border: 5px solid #000; */
+  /* border-radius: 5px; */
+  margin: 0px 0px 30px 30px;
+}
