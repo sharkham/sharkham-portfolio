@@ -23,8 +23,8 @@ function App() {
         <h1>
           Sam Markham
         </h1>
+        <NavBar/>
       </header>
-      <NavBar/>
       <Switch>
         <Route path="/projects"><Projects/></Route>
         <Route path="/blog"><Blog/></Route>
