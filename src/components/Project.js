@@ -5,10 +5,16 @@ const Project = (props) => {
   const { name, description, languages, github, moreinfo, image, livedemo, demovideo, relatedblogposts } = props.data;
 
   const [moreInfoVisibility, setMoreInfoVisibility] = useState(false);
+  const [moreInfoText, setMoreInfoText] = useState("More Info")
 
   const toggleMoreInfo = (e) => {
     e.preventDefault()
     setMoreInfoVisibility(!moreInfoVisibility)
+    if (moreInfoText === "More Info") {
+      setMoreInfoText("Less Info")
+    } else {
+      setMoreInfoText("More Info")
+    }
   }
 
   const moreInfo = () => {
@@ -47,7 +53,7 @@ const Project = (props) => {
       <img src={process.env.PUBLIC_URL + image} alt='Screenshot of app'/>
       <br/>
       <p className="project-languages">{languages}</p>
-      <button className="button-link" onClick={(e) => toggleMoreInfo(e)}>More Info</button>
+      <button className="button-link" onClick={(e) => toggleMoreInfo(e)}>{moreInfoText}</button>
       {(moreInfoVisibility) && moreInfo()}
     </div>
   );
