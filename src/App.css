@@ -108,7 +108,7 @@ body {
   float: right;
 }
 
-.resume {
+.button-link {
   float: right;
   color: black;
   font-size: 18px;
@@ -120,18 +120,19 @@ body {
   transition: all 0.3s ease;
   padding: 5px 18px;
   margin: 0px 5px;
+  background-color:#00cbeb;
   /* display: inline-block; */
 }
 
-.resume:hover,
-.resume:focus {
+.button-link:hover,
+.button-link:focus {
   outline: none;
   color: #00cbeb;
   background-color: #000;
   border-color: #000;
 }
 
-.resume:active {
+.button-link:active {
   color: #000;
   background-color: #00cbeb;
 }

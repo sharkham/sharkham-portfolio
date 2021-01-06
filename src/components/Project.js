@@ -47,7 +47,7 @@ const Project = (props) => {
       <img src={process.env.PUBLIC_URL + image} alt='Screenshot of app'/>
       <br/>
       <p className="project-languages">{languages}</p>
-      <button onClick={(e) => toggleMoreInfo(e)}>More Info</button>
+      <button className="button-link" onClick={(e) => toggleMoreInfo(e)}>More Info</button>
       {(moreInfoVisibility) && moreInfo()}
     </div>
   );
