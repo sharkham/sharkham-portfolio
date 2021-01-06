@@ -56,7 +56,7 @@ export const projects = [
     description: "A writing prompt generator",
     languages: "React (functional), CSS",
     github: "https://github.com/sharkham/prompt-generator",
-    moreinfo: "More info test",
+    moreinfo: "More info test More info testMore info testMore info testMore info testMore info testMore info testMore info testMore info testMore info testMore info testMore info testMore info test",
     image: "promptgeneratorscreenshot.png",
     livedemo: "https://promptgenerator.netlify.app/",
     demovideo: null,
