@@ -71,27 +71,30 @@ body {
   border-radius: 5px;
   border-color: #000;
   width: 40vw;
-  padding: 10px;
+  padding: 30px;
   /* margin: 20px; */
   /* width: 40%;
   min-width: 300px;
   display: grid;
   grid-gap: 10px; */
   margin: 30px auto;
+  box-shadow: 2px 2px 4px #0000003a
 }
 
 .project-languages {
   font-style: italic;
 }
 
-/* .grid-container { */
+.projects-container {
   /* display: grid;
   grid-template: auto / 1fr;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); */
-  /* display: flex; */
-  /* align-items: center; */
-/* } */
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  display: flex;
+  align-items: center; */
+  display: flex;
+  flex-flow: column wrap;
+}
 
 .project-card img {
   width: 39.5vw;

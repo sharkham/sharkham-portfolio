@@ -5,7 +5,7 @@ import Project from './Project';
 const Projects = () => {
 
   return (
-    <div className="grid-container">
+    <div className="projects-container">
       {projects.map(project => {
         return <Project data={project} key={project.github}/>
       })}
