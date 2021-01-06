@@ -49,6 +49,7 @@ h1 {
 body {
   /* background-color: #00dcfe; */
   background-color: #00cbeb;
+  font-size: calc(10px + 2vmin);
   /* background-color: #00bad7; */
 }
 
@@ -136,4 +137,8 @@ body {
   /* border: 5px solid #000; */
   /* border-radius: 5px; */
   margin: 0px 0px 30px 30px;
+}
+
+li {
+  margin: 0 0 10px 0;
 }
