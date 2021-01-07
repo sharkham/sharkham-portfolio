@@ -71,7 +71,7 @@ body {
   border-radius: 5px;
   border-color: #000;
   width: 40vw;
-  padding: 30px;
+  padding: 10px;
   /* margin: 20px; */
   /* width: 40%;
   min-width: 300px;
@@ -151,4 +151,24 @@ body {
 
 li {
   margin: 0 0 10px 0;
+}
+
+.blog-posts a {
+  color: #000;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.blog-posts a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* a:focus {
+  outline: none;
+  color: var(--pink);
+} */
+
+.blog-posts a:active {
+  text-decoration: underline;
 }
