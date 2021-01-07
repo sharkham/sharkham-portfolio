@@ -111,6 +111,22 @@ body {
   float: right;
 }
 
+a {
+  color: #000;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+a:active {
+  color: #eb0056;
+}
+
 .button-link {
   float: right;
   color: black;
@@ -130,6 +146,7 @@ body {
 .button-link:hover,
 .button-link:focus {
   outline: none;
+  text-decoration: none;
   color: #00cbeb;
   background-color: #000;
   border-color: #000;
@@ -138,6 +155,7 @@ body {
 .button-link:active {
   color: #000;
   background-color: #00cbeb;
+  text-decoration: none;
 }
 
 #avatar {
@@ -153,22 +171,4 @@ li {
   margin: 0 0 10px 0;
 }
 
-.blog-posts a {
-  color: #000;
-  transition: all 0.3s ease;
-  text-decoration: none;
-}
 
-.blog-posts a:hover,
-a:focus {
-  text-decoration: underline;
-}
-
-/* a:focus {
-  outline: none;
-  color: var(--pink);
-} */
-
-.blog-posts a:active {
-  text-decoration: underline;
-}
