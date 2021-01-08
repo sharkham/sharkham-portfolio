@@ -27,8 +27,8 @@ function App() {
         <NavBar/>
       </header>
       <Switch>
-        <Route path="/projects"><Projects/></Route>
-        <Route path="/projects/:url"><ProjectPage/></Route>
+        <Route exact path="/projects"><Projects/></Route>
+        <Route path="/projects/:url" component={ProjectPage} />
         <Route path="/blog"><Blog/></Route>
         <Route path="/about"><About/></Route>
         <Route path="/contact"><Contact/></Route>
