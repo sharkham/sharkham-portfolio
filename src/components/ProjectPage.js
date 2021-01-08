@@ -38,9 +38,9 @@ const ProjectPage = ({ match }) => {
     // if (project !== null) {
       return (
         <>
-          <h2>{ project.name }</h2>
+          <h2 className="project-page">{ project.name }</h2>
+          <Link className="button-link project-page project-page-button" to="/projects">Back</Link>
           { moreInfo() }
-          <Link className="button-link" to="/projects">Back</Link>
         </>
       )
     // } else {
