@@ -150,8 +150,11 @@ a:active {
   color: #eb0056;
 }
 
-.button-link {
+.resume {
   float: right;
+}
+
+.button-link {
   color: black;
   font-size: 18px;
   text-decoration: none;
