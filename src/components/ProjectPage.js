@@ -1,14 +1,48 @@
 import React from 'react';
 import { projects } from '../assets/projects';
+import { Link } from 'react-router-dom';
 
 const ProjectPage = ({ match }) => {
   let project = null;
+
+  const moreInfo = () => {
+    let demos
+    if (project.livedemo && project.demovideo) {
+      demos = <p><a href={project.livedemo} target="_blank" rel="noreferrer">Live Demo</a> | <a href={project.demovideo} target="_blank" rel="noreferrer">Demo Video</a></p>
+    } else if (project.livedemo && !project.demovideo) {
+      demos = <p><a href={project.livedemo} target="_blank" rel="noreferrer">Live Demo</a></p>
+    } else if (!project.livedemo && project.demovideo) {
+      demos = <p><a href={project.demovideo} target="_blank" rel="noreferrer">Demo Video</a></p>
+    }
+    let blogPosts
+    if (project.relatedblogposts) {
+      blogPosts = <div>
+        <p>Related Blog Posts:</p>
+        <ul>
+          {project.relatedblogposts.map(post => {
+            return <li><a href={post.url} target="_blank" rel="noreferrer">{post.title}</a></li>
+          })}
+        </ul>
+      </div>
+    }
+    return (
+      <div>
+        <p>{project.moreinfo}</p>
+        {demos}
+        {blogPosts}
+      </div>
+    )
+  }
 
   const displayProjectInfo = () => {
     // if (project !== null) {
       console.log(project.name)
       return (
-        <div>{ project.name }</div>
+        <>
+          <h2>{ project.name }</h2>
+          { moreInfo() }
+          <Link className="button-link" to="/projects">Back</Link>
+        </>
       )
     // } else {
     //   return <p>Invalid URL</p>
@@ -17,30 +51,14 @@ const ProjectPage = ({ match }) => {
 
   const nothingHere = () => {
     console.log("nothinghere")
-    return <div>Invalid URL</div>
+    return <p>Invalid URL</p>
   }
 
   const validUrl = () => {
-    //if the URL typed in matches one of the projects:
-    //load that page
-    //else:
-    //display an error
-    // const projectUrls = projects.map(p => {return p.url})
-    // if (!projectUrls.includes(match.params.url)) {
-    //   console.log("not here")
-    //   return false
-    // }
 
     projects.forEach(p => {
       if (p.url === match.params.url) {
         project = p
-        console.log(p)
-      //   return true
-      //   // return displayProjectInfo()
-      //   // return p.title
-      // } else {
-      //   console.log("not here")
-      //   return false
       }
     })
     if (project !== null) {
