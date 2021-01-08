@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import Home from './components/Home';
 import Projects from './components/Projects';
+import ProjectPage from './components/ProjectPage';
 import Blog from './components/Blog';
 import Resume from './components/Resume';
 import About from './components/About';
@@ -27,6 +28,7 @@ function App() {
       </header>
       <Switch>
         <Route path="/projects"><Projects/></Route>
+        <Route path="/projects/:url"><ProjectPage/></Route>
         <Route path="/blog"><Blog/></Route>
         <Route path="/about"><About/></Route>
         <Route path="/contact"><Contact/></Route>
