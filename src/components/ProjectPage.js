@@ -36,7 +36,6 @@ const ProjectPage = ({ match }) => {
 
   const displayProjectInfo = () => {
     // if (project !== null) {
-      console.log(project.name)
       return (
         <>
           <h2>{ project.name }</h2>
@@ -50,7 +49,6 @@ const ProjectPage = ({ match }) => {
   }
 
   const nothingHere = () => {
-    console.log("nothinghere")
     return <p>Invalid URL</p>
   }
 
@@ -62,7 +60,6 @@ const ProjectPage = ({ match }) => {
       }
     })
     if (project !== null) {
-      console.log("true")
       return true
     }
   }
