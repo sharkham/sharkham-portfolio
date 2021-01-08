@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Project = (props) => {
 
-  const { name, description, languages, github, moreinfo, image, livedemo, demovideo, relatedblogposts } = props.data;
+  const { name, url, description, languages, github, moreinfo, image, livedemo, demovideo, relatedblogposts } = props.data;
 
   const [moreInfoVisibility, setMoreInfoVisibility] = useState(false);
   const [moreInfoText, setMoreInfoText] = useState("More Info")
@@ -48,7 +49,7 @@ const Project = (props) => {
 
   return (
     <div className="project-card">
-      <h2>{name}</h2>
+      <h2><Link to={`/projects/${url}`}>{name}</Link></h2>
       <p>{description}</p>
       <img src={process.env.PUBLIC_URL + image} alt='Screenshot of app'/>
       <br/>

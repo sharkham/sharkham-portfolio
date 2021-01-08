@@ -1,6 +1,7 @@
 export const projects = [
   {
     name: "Novel Tracker App",
+    url: "novel-tracker-app",
     description: "A novel tracking app",
     languages: "React, Redux, Rails (API), ReactStrap",
     github: "https://github.com/sharkham/novel-tracker-frontend",
@@ -33,6 +34,7 @@ export const projects = [
   },
   {
     name: "PokéTeamBuilder",
+    url: "poketeambuilder",
     description: "A Pokémon size comparison app",
     languages: "VanillaJS, Rails (API)",
     github: "https://github.com/sharkham/PokeTeamBuilder",
@@ -53,6 +55,7 @@ export const projects = [
   },
   {
     name: "Prompt Generator",
+    url: "prompt-generator",
     description: "A writing prompt generator",
     languages: "React (functional), CSS",
     github: "https://github.com/sharkham/prompt-generator",

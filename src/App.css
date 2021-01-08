@@ -90,7 +90,7 @@ body {
   font-style: italic;
 }
 
-.projects-container {
+/* .projects-container { */
   /* display: grid;
   grid-template: auto / 1fr;
   grid-gap: 10px;
@@ -100,7 +100,7 @@ body {
   /* display: flex; */
   /* flex-flow: row wrap;
   justify-content: flex-start; */
-}
+/* } */
 
 @media all and (min-width: 500px) {
   .App {
