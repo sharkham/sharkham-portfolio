@@ -183,7 +183,7 @@ li {
   font-weight: bold;
 }
 
-@media all and (min-width: 500px) {
+@media all and (min-width: 1050px) {
   .App {
     padding: 2% 10% 5% 10%;
   }
@@ -200,9 +200,13 @@ li {
 
   .projects-container {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     justify-content: flex-start;
   }
+
+}
+
+@media all and (min-width: 500px) {
 
   .project-page {
     display: inline-block;
