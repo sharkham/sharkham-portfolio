@@ -8,16 +8,16 @@ const ProjectPage = ({ match }) => {
   const moreInfo = () => {
     let demos
     if (project.livedemo && project.demovideo) {
-      demos = <p><a href={project.livedemo} target="_blank" rel="noreferrer">Live Demo</a> | <a href={project.demovideo} target="_blank" rel="noreferrer">Demo Video</a></p>
+      demos = <p className="project-links"><a href={project.github} target="_blank" rel="noreferrer">Github</a> | <a href={project.livedemo} target="_blank" rel="noreferrer">Live Demo</a> | <a href={project.demovideo} target="_blank" rel="noreferrer">Demo Video</a></p>
     } else if (project.livedemo && !project.demovideo) {
-      demos = <p><a href={project.livedemo} target="_blank" rel="noreferrer">Live Demo</a></p>
+      demos = <p className="project-links"><a href={project.github} target="_blank" rel="noreferrer">Github</a> | <a href={project.livedemo} target="_blank" rel="noreferrer">Live Demo</a></p>
     } else if (!project.livedemo && project.demovideo) {
-      demos = <p><a href={project.demovideo} target="_blank" rel="noreferrer">Demo Video</a></p>
+      demos = <p className="project-links"><a href={project.github} target="_blank" rel="noreferrer">Github</a> | <a href={project.demovideo} target="_blank" rel="noreferrer">Demo Video</a></p>
     }
     let blogPosts
     if (project.relatedblogposts) {
       blogPosts = <div>
-        <p>Related Blog Posts:</p>
+        <h3>Related Blog Posts:</h3>
         <ul>
           {project.relatedblogposts.map(post => {
             return <li><a href={post.url} target="_blank" rel="noreferrer">{post.title}</a></li>

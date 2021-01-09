@@ -179,6 +179,9 @@ li {
   margin: 0 0 10px 0;
 }
 
+.project-links {
+  font-weight: bold;
+}
 
 @media all and (min-width: 500px) {
   .App {
