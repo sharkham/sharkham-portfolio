@@ -39,7 +39,7 @@ export const projects = [
     languages: "VanillaJS, Rails (API)",
     github: "https://github.com/sharkham/PokeTeamBuilder",
     moreinfo: "Ever wanted an easy way to tell how big your favourite team of Pokémon is compared to you? PokéTeamBuilder is a single page JavaScript application (with a Rails API as a back-end) where users can create a trainer and select up to 6 Pokémon from generations 1-3 that will appear (mostly) sized according to their Pokédex height. Pokémon and trainers can then be dragged around on a background to create a team picture. Pokémon, trainer sprites, and positions are saved, and reloaded upon login.",
-    image: "../../public/noveltrackerapp.png",
+    image: "poketeambuilder_screenshot.png",
     livedemo: null,
     demovideo: "https://youtu.be/iJ1hqZwg1SM",
     relatedblogposts: [
@@ -77,7 +77,7 @@ export const projects = [
     languages: "Rails, Google OAuth",
     github: "https://github.com/sharkham/CollabWritingApp",
     moreinfo: "Collab Writing App is a Rails(6)-based web application intended for use by writers working on group novel projects together. Within the app, a user can create a novel, only visible to them, and invite other users to the novel project to allow them to edit and add to it.",
-    image: "promptgeneratorscreenshot.jpg",
+    image: "collabwritingappscreenshot.png",
     demovideo: "https://youtu.be/PoT4jxDS6rA",
     relatedblogposts: [
       {
