@@ -81,7 +81,10 @@ body {
   box-shadow: 2px 2px 4px #0000003a
 }
 
-.project-card img {
+.project-page-image {
+  border: solid 2px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px #0000003a;
   width: 99%;
   /* margin: 0 auto; */
 }
@@ -194,7 +197,7 @@ li {
     margin: 30px 30px 0 0;
   }
 
-  .project-card img {
+  .project-page-image {
     width: 99%;
   }
 

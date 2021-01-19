@@ -27,10 +27,10 @@ const ProjectPage = ({ match }) => {
     }
     return (
       <div>
-        <img className="project-page-image" src={`/${project.image}`} alt='Screenshot of app'/>
         <p>{project.moreinfo}</p>
         {demos}
         {blogPosts}
+        <img className="project-page-image" src={`/${project.image}`} alt='Screenshot of app'/>
       </div>
     )
   }
