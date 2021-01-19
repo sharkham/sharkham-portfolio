@@ -193,6 +193,10 @@ li {
   .project-page-image {
     width: 99%;
   }
+/*
+  h2.project-page {
+    margin-bottom: 0;
+  } */
 
   .projects-container {
     display: flex;
@@ -210,6 +214,10 @@ li {
     /* border: 5px solid #000; */
     /* border-radius: 5px; */
     margin: 0px 0px 30px 30px;
+  }
+
+  .project-page-more-info p {
+    margin-top: 0;
   }
 
   .project-page {

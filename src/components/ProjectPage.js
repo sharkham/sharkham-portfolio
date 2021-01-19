@@ -26,7 +26,7 @@ const ProjectPage = ({ match }) => {
       </div>
     }
     return (
-      <div>
+      <div className="project-page-more-info">
         <p>{project.moreinfo}</p>
         {demos}
         {blogPosts}
