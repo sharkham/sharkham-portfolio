@@ -12,8 +12,8 @@ const CatPictureGenerator = () => {
 
   return (
     <div>
+      <button className="button-link cat-generator-button" onClick={() => setCat(generate())}>New Cat Pic!</button>
       <img className="cat-picture" src={`/wusser${cat}.jpg`} alt="cat picture"/>
-      <button className="button-link" onClick={() => setCat(generate())}>New Cat Pic!</button>
     </div>
   );
 }

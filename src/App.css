@@ -94,6 +94,8 @@ body {
   /* margin: 0 auto; */
 }
 
+
+
 /* .projects-container { */
   /* display: grid;
   grid-template: auto / 1fr;
@@ -170,6 +172,12 @@ a:active {
   margin: 0;
 }
 
+.cat-generator-button {
+  margin-left: 0;
+  margin-bottom: 20px;
+  display: block;
+}
+
 #avatar {
   /* float: right; */
   width: 200px;
@@ -212,6 +220,10 @@ li {
     justify-content: flex-start;
   }
 
+  /* .cat-picture {
+    width: 75%;
+  } */
+
 }
 
 @media all and (min-width: 500px) {
@@ -235,5 +247,9 @@ li {
 
   .project-page-button {
     margin: 0 0 0 1em;
+  }
+
+  .cat-picture {
+    width: 60%;
   }
 }
