@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const CatPictureGenerator = () => {
 
   const generate = () => {
-    return Math.floor(Math.random() * 11)
+    return Math.floor(Math.random() * 12)
     // return props.dataset[Math.floor(Math.random() * props.dataset.length)];
   }
 
