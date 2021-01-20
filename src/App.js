@@ -2,7 +2,8 @@ import './App.css';
 import NavBar from './components/NavBar';
 import {
   Switch,
-  Route
+  Route,
+  Link
 } from 'react-router-dom';
 import Home from './components/Home';
 import Projects from './components/Projects';
@@ -22,7 +23,9 @@ function App() {
         <Socials/>
         <Resume/>
         <h1>
-          Sam Markham
+          <Link to="/">
+            Sam Markham
+          </Link>
         </h1>
         <NavBar/>
       </header>
