@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Project = (props) => {
 
-  const { name, url, description, languages, github } = props.data;
+  const { name, url, description, languages } = props.data;
 
   return (
     <div className="project-card">
