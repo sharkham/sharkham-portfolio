@@ -21,19 +21,21 @@ const Blog = () => {
   }, []);
 
   const displayPosts = () => {
-    // if (!!blogPosts) {
+    if (!!blogPosts) {
       return blogPosts.map(post => {
       return(
         <BlogPost data={post} key={post.id}/>
       )
       })
-    // }
+    } else {
+      <p>Error: {JSON.stringify(hasError)}</p>
+    }
     // console.log(blogPosts);
   }
 
   return (
     <div className="blog-posts">
-      <p>I blog about coding sometimes! Check out my most recent posts here, or find more of them on my <a href="https://dev.to/sharkham" target="_blank">DEV profile</a>.</p>
+      <p>I blog about coding sometimes! Check out my most recent posts here, or find more of them on my <a href="https://dev.to/sharkham" target="_blank" rel="noreferrer">DEV profile</a>.</p>
       <ul>
         {blogPosts && displayPosts()}
       </ul>
