@@ -2,7 +2,7 @@ export const projects = [
   {
     name: "Novel Tracker App",
     url: "novel-tracker-app",
-    description: "A novel tracking app",
+    description: "A novel progress tracking app, built for novel writing contests",
     languages: "React, Redux, Rails (API), ReactStrap",
     github: "https://github.com/sharkham/novel-tracker-frontend",
     moreinfo: "Ever wanted to run your own novel writing contest, or just keep track of your novel writing progress? Novel Tracker is a single page React app (with a Rails API as a back-end) where users can create a novel project for each year of a novel writing contest, edit it, update their wordcount (which displays in a progress bar) and earn badges for achievements. Users can also view basic information about other contest participants like novel title, summary, progress and badges.",
