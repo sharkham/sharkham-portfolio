@@ -86,6 +86,14 @@ body {
   font-style: italic;
 }
 
+.cat-picture {
+  border: solid 2px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px #0000003a;
+  width: 99%;
+  /* margin: 0 auto; */
+}
+
 /* .projects-container { */
   /* display: grid;
   grid-template: auto / 1fr;
