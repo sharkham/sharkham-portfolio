@@ -5,9 +5,10 @@ const About = () => {
   return (
     <div>
       <img id="avatar" src={avatar} alt="Sam, a smiling white person with short blue hair"/>
-      <p>Full stack software engineer with experience in Ruby and Javascript, including Rails and React frameworks. Developing further skills in SQL and Postgres. </p>
-      <p>My previous life includes a decade of experience in problem solving through writing, editing, critique and collaboration across many fields, from fiction and a published sociology paper to graphic novels and press releases.</p>
-      <p>My blend of skills in collaboration, communication, analysis and creativity supplement my hard skills in coding. I enjoy putting my mind to a blank page and crafting something tangible and useful.</p>
+      <p>Hi I’m Sam! Full stack software engineer, blogger and former book publicist (as well as part-time fiction writer).</p>
+      <p>My life before coding involves a decade of experience through solving problems through writing, editing, critique and collaboration across many fields, from press releases and a published sociology paper to graphic novels and fiction.</p>
+      <p>All the skills I’ve gathered along the way have facilitated a new-found expertise in building tangible and useful products using Ruby and JavaScript, like an app for a novel contest, built with Ruby on Rails and React, that allows participants to keep track of their writing progress.</p>
+      <p>I’m on the lookout for new opportunities remotely or in Vancouver, BC, where I’m based, so if you’re looking for a motivated and detail-oriented programmer with solid communication skills and three years’ experience with remote work, please <a href="mailto:sam.e.markham@gmail.com" target="_blank" rel="noreferrer">get in touch!</a></p>
     </div>
   );
 }
