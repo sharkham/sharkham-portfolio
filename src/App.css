@@ -145,6 +145,21 @@ body {
   float: right;
 }
 
+.contact-icons-div {
+  display: flex;
+  justify-content: left;
+  /* padding-left: 10vw;
+  padding-right: 10vw; */
+}
+
+.contact-icons {
+  width: calc(50px + 2vmin);
+  display: block;
+  text-align: center;
+  align-items: center;
+  justify-Content: center;
+}
+
 a {
   color: #000;
   transition: all 0.3s ease;
