@@ -34,6 +34,8 @@
 
 h1 {
   margin: 50px auto 0px;
+  /* font-family: 'PKMN RBYGSC', sans-serif;
+  font-size: 1.65em; */
 }
 
 
@@ -41,17 +43,42 @@ h1 {
   padding: 10px 10px 10px 0px;
   text-decoration: none;
   font-weight: bold;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(12px + 2vmin);
+  /* font-size: calc(6px + 2vmin); */
   /* color: #00434e; */
   color: #000;
+  /* font-family: 'PKMN RBYGSC', sans-serif;
+  padding-right: calc(2px + 2vmin); */
 }
 
 body {
   /* background-color: #00dcfe; */
   background-color: #00cbeb;
   font-size: calc(10px + 2vmin);
+  /* font-family: 'source_code_proregular', sans-serif; */
   /* background-color: #00bad7; */
 }
+
+/* p, li {
+  font-family: 'source_code_proregular', serif;
+  font-size: calc(8px + 2vmin)
+} */
+
+/* h2 {
+  font-family: 'PKMN RBYGSC', sans-serif;
+  font-size: calc(11px + 2vmin);
+  word-spacing: .25em;
+} */
+
+/* h3 {
+  font-family: 'PKMN RBYGSC', sans-serif;
+  font-size: calc(8px + 2vmin);
+  word-spacing: .25em;
+} */
+
+/* h2.home-h2 {
+  word-spacing: .5em;
+} */
 
 /* nav {
   background-color: #eb0056;
@@ -150,6 +177,7 @@ a:active {
   padding: 5px 18px;
   margin: 0px 5px;
   background-color:#00cbeb;
+  /* font-family: 'montserratbold', sans-serif; */
   /* display: inline-block; */
 }
 
