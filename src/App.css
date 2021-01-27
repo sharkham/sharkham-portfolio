@@ -64,6 +64,7 @@ h1 {
 nav {
   display: flex;
   justify-content: space-between;
+  padding-right: 5px;
 }
 
 body {
