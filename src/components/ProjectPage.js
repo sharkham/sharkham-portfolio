@@ -36,7 +36,6 @@ const ProjectPage = ({ match }) => {
   }
 
   const displayProjectInfo = () => {
-    // if (project !== null) {
       return (
         <>
           <h2 className="project-page">{ project.name }</h2>
@@ -44,9 +43,6 @@ const ProjectPage = ({ match }) => {
           { moreInfo() }
         </>
       )
-    // } else {
-    //   return <p>Invalid URL</p>
-    // }
   }
 
   const nothingHere = () => {
