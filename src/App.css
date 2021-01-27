@@ -40,15 +40,25 @@ h1 {
 
 
 .nav-link {
-  padding: 10px 10px 10px 0px;
+  padding: 2px;
   text-decoration: none;
   font-weight: bold;
-  font-size: calc(12px + 2vmin);
+  font-size: calc(11px + 2vmin);
   /* font-size: calc(6px + 2vmin); */
   /* color: #00434e; */
   color: #000;
   /* font-family: 'PKMN RBYGSC', sans-serif;
   padding-right: calc(2px + 2vmin); */
+}
+
+.nav-link-first {
+  padding: 2px 2px 2px 0px;
+}
+
+.link-divider {
+  /* display: none; */
+  display: inline-block;
+  font-size: calc(12px + 2vmin);
 }
 
 body {
@@ -267,6 +277,7 @@ li {
     width: 75%;
   } */
 
+
 }
 
 @media all and (min-width: 500px) {
@@ -294,5 +305,20 @@ li {
 
   .cat-picture {
     width: 60%;
+  }
+
+  .nav-link {
+    padding: 20px;
+    font-size: calc(12px + 2vmin);
+  }
+
+  .nav-link-first {
+    padding: 20px 20px 20px 0px;
+  }
+
+  .link-divider {
+    display: inline-block;
+    /* font-weight: bolder; */
+    font-size: calc(12px + 2vmin);
   }
 }
