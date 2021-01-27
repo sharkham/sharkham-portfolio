@@ -30,7 +30,6 @@ const Blog = () => {
     } else {
       <p>Error: {JSON.stringify(hasError)}</p>
     }
-    // console.log(blogPosts);
   }
 
   return (
@@ -39,8 +38,6 @@ const Blog = () => {
       <ul>
         {blogPosts && displayPosts()}
       </ul>
-      {/* <hr />
-      <span>Has error: {JSON.stringify(hasError)}</span> */}
     </div>
   );
 }
