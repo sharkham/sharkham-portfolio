@@ -61,6 +61,11 @@ h1 {
   font-size: calc(12px + 2vmin);
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
 body {
   /* background-color: #00dcfe; */
   background-color: #00cbeb;
@@ -280,7 +285,7 @@ li {
 
 }
 
-@media all and (min-width: 500px) {
+@media all and (min-width: 550px) {
   #avatar {
     float: right;
     /* width: 200px;
@@ -320,5 +325,10 @@ li {
     display: inline-block;
     /* font-weight: bolder; */
     font-size: calc(12px + 2vmin);
+  }
+
+  nav {
+    display: inline-block;
+    justify-content: flex-start;
   }
 }
