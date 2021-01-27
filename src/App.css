@@ -311,6 +311,7 @@ li {
 
   .cat-picture {
     width: 60%;
+    max-width: 700px;
   }
 
   .nav-link {
