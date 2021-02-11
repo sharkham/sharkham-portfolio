@@ -1,5 +1,5 @@
 import React from 'react';
-import avatar from '../images/professional_avatar_2015 small.jpeg'
+import avatar from '../images/professional_avatar_2021 small.jpeg'
 import { Link } from 'react-router-dom';
 
 const About = () => {
