@@ -1,5 +1,5 @@
 import React from 'react';
-import avatar from '../images/professional_avatar_2021 small.jpeg'
+import avatar from '../images/new_avatar.jpeg'
 
 const About = () => {
   return (
