@@ -34,7 +34,7 @@ const Blog = () => {
 
   return (
     <div className="blog-posts">
-      <p>I blog about coding sometimes! Check out my most recent posts here, or find more of them on my <a href="https://dev.to/sharkham" target="_blank" rel="noreferrer">DEV profile</a>.</p>
+      <p>I haven't blogged about coding in a little while, but you can check out some of my posts here, or find more of them on my <a href="https://dev.to/sharkham" target="_blank" rel="noreferrer">DEV profile</a>.</p>
       <ul>
         {blogPosts && displayPosts()}
       </ul>

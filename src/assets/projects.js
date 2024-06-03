@@ -7,7 +7,7 @@ export const projects = [
     github: "https://github.com/sharkham/novel-tracker-frontend",
     moreinfo: "Ever wanted to run your own novel writing contest, or just keep track of your novel writing progress? Novel Tracker is a single page React app (with a Rails API as a back-end) where users can create a novel project for each year of a novel writing contest, edit it, update their wordcount (which displays in a progress bar) and earn badges for achievements. Users can also view basic information about other contest participants like novel title, summary, progress and badges.",
     image: "noveltrackerappscreenshot.png",
-    livedemo: "http://novel-tracker-app.netlify.app/",
+    livedemo: null,
     demovideo: "https://youtu.be/e5lMdRyioSU",
     relatedblogposts: [
       {
